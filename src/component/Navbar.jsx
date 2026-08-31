@@ -51,8 +51,8 @@ export default function Navbar() {
         <Link href="/">
           <Image
             src="/logo.png"
-            width={390}
-            height={205}
+            width={100}
+            height={100}
             alt="Fast Reach Global"
             className="fast-logo"
             priority

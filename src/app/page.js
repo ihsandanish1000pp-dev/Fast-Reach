@@ -16,11 +16,6 @@ import {
 } from "lucide-react";
 
 
-
-
-
-
-
 const stats = [
   {
     number: 30,
@@ -88,7 +83,7 @@ export default function Hero() {
                 Delivered with Precision.
               </h1>
 
-              <p>
+              <p >
                 Integrated contracting and trading solutions built on quality,
                 safety, and
                 <br className="desktop-break" />
@@ -209,7 +204,7 @@ export default function Hero() {
         <div className="container-fluid">
           <div className="row m-3 gap-3">
             <h1 className="text-center pt-5 services-text">Our Expertise</h1>
-            <p className="text-center lorem pb-0">Lorem, ipsum dolor sit amet consectet         uradipisicing elit. Explicabo
+            <p className="text-center lorem pb-0" style={{fontSize: '15px'}}>Lorem, ipsum dolor sit amet consectet uradipisicing elit. Explicabo
               <p className="d-block"> omnis hic aliquam sapiente possimus totam iste
                 perspiciatis necessitatibus repellendus reprehenderit
               </p>
@@ -616,9 +611,9 @@ export default function Hero() {
           href="#"
           className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
           style={{
-            width: "36px",
-            height: "36px",
-            fontSize: "16px",
+            width: "16px",
+            height: "16px",
+            fontSize: "10px",
           }}
         >
           <i className="bi bi-facebook"></i>
