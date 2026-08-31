@@ -1100,8 +1100,8 @@ a.hero-btn {
 
 @media (max-width: 576px) {
   .subtext.mb4 {
-    
-      margin-bottom: 5px;
+
+    margin-bottom: 5px;
 
   }
 
@@ -1287,8 +1287,130 @@ a.hero-btn {
 
 
 @media screen {
-  .bg-black{
-     
-     height: auto;
+  .bg-black {
+
+    height: auto;
   }
+}
+
+
+
+
+
+
+
+/* start the About page css */
+
+
+.About-hero-section {
+
+  background-color: #c19b27;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.About-text {
+
+  font-size: 46px;
+  font-weight: 600;
+
+}
+
+
+.About-text {
+  animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logoo {
+  width: 80%;
+  height: auto;
+}
+
+
+
+@media(max-width: 768) {
+  .logoo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+@media(max-width: 768) {
+  .p-text {
+    padding-left: 10px;
+  }
+}
+
+
+
+@media(max-width: 768) {
+  .about-text {
+    padding-left: 10px;
+  }
+}
+
+.about-text {
+  font-size: 45px;
+  font-weight: 700;
+  /* border-bottom: 4px solid black; */
+  text-decoration: underline
+}
+
+.p-text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+
+
+/* Expertiese  */
+
+.Exp-hero-section {
+
+  background-color: #c19b27;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+}
+
+@media (width: 567px) {
+  .P-texttt {
+    text-align: left;
+  }
+}
+.box-1{
+
+  /* border: 1px solid black; */
+  height: 280px;
+}
+
+
+.box-pic{
+
+   border-radius: 20px;
+   min-height: 200px;
+   max-height: 250px;
 }
