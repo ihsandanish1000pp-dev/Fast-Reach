@@ -2,91 +2,108 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+// import "./navbar.css";
+
 export default function Navbar() {
   return (
     <header className="fast-navbar sticky-top">
 
-      <div className="container-fluid h-100">
-        <div className="row h-100 align-items-center">
+      {/* ================= TOP LEFT SOCIAL ================= */}
+      <div className="social-icons">
+        <Link href="#">
+          <i className="bi bi-twitter"></i>
+        </Link>
 
-          {/* LEFT SIDE */}
-          <div className="col-lg-4 left-side">
+        <Link href="#">
+          <i className="bi bi-instagram"></i>
+        </Link>
 
-            {/* Social Icons */}
-            <div className="social-icons mb-4">
-              <i className="bi bi-twitter-x"></i>
-              <i className="bi bi-instagram"></i>
-              <i className="bi bi-whatsapp"></i>
-              <i className="bi bi-youtube"></i>
-            </div>
+        <Link href="#">
+          <i className="bi bi-whatsapp"></i>
+        </Link>
 
-            {/* Menu */}
-            <nav className="menu">
-              <Link href="/">HOME</Link>
-              <Link href="/About">ABOUT US</Link>
-              <Link href="/expertise">OUR EXPERTISE</Link>
-              <Link href="/testimonial">TESTIMONIAL</Link>
-            </nav>
-
-          </div>
+        <Link href="#">
+          <i className="bi bi-youtube"></i>
+        </Link>
+      </div>
 
 
-          {/* CENTER LOGO */}
-          <div className="col-lg-4 logo-section">
+      {/* ================= TOP RIGHT CONTACT ================= */}
+      <div className="top-contact">
+ 
+      * <span className="email">
+          <i className="bi bi-envelope"></i>
+          info@fastreachglobal.com
+        </span>
 
-            <Image
-              src="/logo.png"
-              width={365}
-              height={208}
-              alt="Fast Reach"
-              priority
-            />
+        <span className="phone">
+          <i className="bi bi-telephone"></i>
+          +966546865628
+        </span> 
 
-          </div>
-
-
-          {/* RIGHT SIDE */}
-          <div className="col-lg-4 right-side">
-
-            {/* Email + Phone */}
-            <div className="contact-info">
-
-              <div>
-                <i className="bi bi-envelope"></i>
-                <span>info@fastreachglobal.com</span>
-              </div>
-
-              <div>
-                <i className="bi bi-telephone"></i>
-                <span>+966546865628</span>
-              </div>
-
-            </div>
+      </div>
 
 
-            {/* Buttons */}
-            <div className="action-buttons">
+      {/* ================= CENTER LOGO ================= */}
+      <div className="logo-area">
 
-              <button className="contact-btn">
-                CONTACT US
-                <i className="bi bi-arrow-right"></i>
-              </button>
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            width={390}
+            height={205}
+            alt="Fast Reach Global"
+            className="fast-logo"
+            priority
+          />
+        </Link>
 
-              <button className="circle-btn white-btn">
-                <i className="bi bi-envelope"></i>
-              </button>
+      </div>
 
-              <button className="circle-btn gold-btn">
-                <i className="bi bi-telephone"></i>
-              </button>
 
-            </div>
+      {/* ================= LEFT MENU ================= */}
+      <nav className="main-menu">
 
-          </div>
+        <Link href="/">HOME</Link>
 
-        </div>
+        <Link href="/about">
+          ABOUT US
+        </Link>
+
+        <Link href="/expertise">
+          OUR EXPERTISE
+        </Link>
+
+        <Link href="/testimonial">
+          TESTIMONIAL
+        </Link>
+
+      </nav>
+
+
+      {/* ================= RIGHT ACTIONS ================= */}
+      <div className="action-area">
+ 
+         <Link href="/contact" className="contact-btn">
+          CONTACT US
+          <i className="bi bi-arrow-right"></i>
+        </Link>
+
+        <Link
+          href="mailto:info@fastreachglobal.com"
+          className="round-btn email-btn"
+        >
+          <i className="bi bi-envelope"></i>
+        </Link>
+
+        <Link
+          href="tel:+966546865628"
+          className="round-btn phone-btn"
+        >
+          <i className="bi bi-telephone"></i>
+        </Link> 
+
       </div>
 
     </header>
