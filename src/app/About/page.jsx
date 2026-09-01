@@ -52,9 +52,9 @@ const page = () => {
         <div className="container-fluid sixth-container">
           <div className="row text-center">
             <div className="col-sm-12 col-md-12 col-lg-12">
-              <h5 className=" text-content mb-0 pt-5 ps-4">
+              <h6 className=" text-content mb-0 pt-5 ps-4">
                 Want To Chat? Feel Free To Contact Our Team
-              </h5>
+              </h6>
               <p className="if-text ">If you have anything in mind just contact with our exper</p>
 
               <button className="subtext mb-2">Submit In Enquiry  </button>

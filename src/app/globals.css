@@ -1060,7 +1060,7 @@ a.hero-btn {
 
   font-weight: 700;
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 
 }
 
@@ -1401,16 +1401,35 @@ a.hero-btn {
     text-align: left;
   }
 }
-.box-1{
+
+.box-1 {
 
   /* border: 1px solid black; */
   height: 280px;
 }
 
 
-.box-pic{
+.rounded-box {
 
-   border-radius: 20px;
-   min-height: 200px;
-   max-height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 300px;
+  /* width: 300px; */
 }
+
+.image-box {
+
+  /* border: 4px solid hsl(0, 8%, 82%); */
+  box-shadow: 14px 10px 10px hwb(0 91% 8%);
+  border-radius: 5px;
+  min-height: 370px;
+  /* min-width: 350px; */
+  text-align: center;
+}
+
+.image-box {
+
+   transform: scale(1.1);
+}
+
+     
