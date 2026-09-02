@@ -204,18 +204,18 @@ export default function Hero() {
         <div className="container-fluid">
           <div className="row m-3 gap-3">
             <h1 className="text-center pt-5 services-text">Our Expertise</h1>
-            <p className="text-center lorem pb-0" style={{fontSize: '15px'}}>Lorem, ipsum dolor sit amet consectet uradipisicing elit. Explicabo
+            <p className="text-center lorem pb-0" style={{ fontSize: '15px' }}>Lorem, ipsum dolor sit amet consectet uradipisicing elit. Explicabo
               <p className="d-block"> omnis hic aliquam sapiente possimus totam iste
                 perspiciatis necessitatibus repellendus reprehenderit
               </p>
             </p>
             <div className="col-sm-12 col-md-3 col-lg pic-box">
-              <Image className="image"
-                src="/First-pic.jpg"
+
+              <Image
+                src="/civil.avif"
                 width={300}
                 height={300}
                 alt="pic"
-
                 style={{
                   objectFit: "cover",
                   objectPosition: "center",
@@ -226,10 +226,13 @@ export default function Hero() {
               />
 
               <div className="pic-content">
-                <h6>General Contracting</h6>
-                <button ><ArrowRight size={20} /></button>
+                <h6>FAADE & EXTERNEL WORKS</h6>
+                <button><ArrowRight size={20} /></button>
               </div>
+
             </div>
+
+
             <div className="col-sm-12 col-md-3 col-lg pic-box">
 
               <Image
@@ -408,12 +411,12 @@ export default function Hero() {
         <div className="container-fluid sixth-container">
           <div className="row text-center">
             <div className="col-sm-12 col-md-12 col-lg-12">
-              <h5 className=" text-content mb-0 pt-5 ps-4">
+              <h2 className=" text-content mb-0  ">
                 Want To Chat? Feel Free To Contact Our Team
-              </h5>
+              </h2>
               <p className="if-text ">If you have anything in mind just contact with our exper</p>
 
-              <button className="subtext mb-2">Submit In Enquiry  </button>
+              <button className="subtext mb-4">Submit In Enquiry </button>
               <button className="subtext mb-2">Contact Us</button>
             </div>
 
@@ -424,208 +427,208 @@ export default function Hero() {
 
 
 
-<footer className="bg-black text-white">
+      <footer className="bg-black text-white">
 
-  {/* ================= TOP INFO ROW ================= */}
-  <div className="container-fluid border-bottom border-secondary border-opacity-25">
+        {/* ================= TOP INFO ROW ================= */}
+        <div className="container-fluid border-bottom border-secondary border-opacity-25">
 
-    <div className="row py-4 align-items-center">
+          <div className="row py-4 align-items-center">
 
-      {/* PHONE */}
-      <div className="col-12 col-md-4 d-flex align-items-center justify-content-md-center gap-3 mb-3 mb-md-0 px-4">
+            {/* PHONE */}
+            <div className="col-12 col-md-4 d-flex align-items-center justify-content-md-center gap-3 mb-3 mb-md-0 px-4">
 
-        <i
-          className="bi bi-telephone"
-          style={{ color: "#d4af37", fontSize: "26px" }}
-        ></i>
+              <i
+                className="bi bi-telephone"
+                style={{ color: "#d4af37", fontSize: "26px" }}
+              ></i>
 
-        <a
-          href="tel:+966546865628"
-          className="text-white text-decoration-none fw-bold fs-5"
-        >
-          +966546865628
-        </a>
+              <a
+                href="tel:+966546865628"
+                className="text-white text-decoration-none fw-bold fs-5"
+              >
+                +966546865628
+              </a>
 
-      </div>
-
-
-      {/* DIVIDER */}
-      <div className="d-none d-md-block col-md-auto p-0">
-
-        <div
-          style={{
-            width: "1px",
-            height: "70px",
-            background: "rgba(212,175,55,0.4)",
-          }}
-        ></div>
-
-      </div>
+            </div>
 
 
-      {/* EMAIL */}
-      <div className="col-12 col-md-4 d-flex align-items-center justify-content-md-center gap-3 mb-3 mb-md-0 px-4">
+            {/* DIVIDER */}
+            <div className="d-none d-md-block col-md-auto p-0">
 
-        <i
-          className="bi bi-envelope"
-          style={{ color: "#d4af37", fontSize: "26px" }}
-        ></i>
+              <div
+                style={{
+                  width: "1px",
+                  height: "70px",
+                  background: "rgba(212,175,55,0.4)",
+                }}
+              ></div>
 
-        <a
-          href="mailto:info@fastreachglobal.com"
-          className="text-white text-decoration-none fw-bold fs-5"
-        >
-          info@fastreachglobal.com
-        </a>
-
-      </div>
+            </div>
 
 
-      {/* DIVIDER */}
-      <div className="d-none d-md-block col-md-auto p-0">
+            {/* EMAIL */}
+            <div className="col-12 col-md-4 d-flex align-items-center justify-content-md-center gap-3 mb-3 mb-md-0 px-4">
 
-        <div
-          style={{
-            width: "1px",
-            height: "70px",
-            background: "rgba(212,175,55,0.4)",
-          }}
-        ></div>
+              <i
+                className="bi bi-envelope"
+                style={{ color: "#d4af37", fontSize: "26px" }}
+              ></i>
 
-      </div>
+              <a
+                href="mailto:info@fastreachglobal.com"
+                className="text-white text-decoration-none fw-bold fs-5"
+              >
+                info@fastreachglobal.com
+              </a>
 
-
-      {/* ADDRESS */}
-      <div className="col-12 col-md d-flex align-items-start justify-content-md-center gap-3 px-4">
-
-        <i
-          className="bi bi-geo-alt"
-          style={{
-            color: "#d4af37",
-            fontSize: "26px",
-            marginTop: "3px",
-          }}
-        ></i>
-
-        <span className="fw-bold fs-5 lh-sm">
-          Building No. 3922, Street 4, Al Iskan District, Riyadh,
-          Kindom of Saudia Arabia.
-        </span>
-
-      </div>
-
-    </div>
-
-  </div>
+            </div>
 
 
-  {/* ================= MIDDLE MENU ROW ================= */}
+            {/* DIVIDER */}
+            <div className="d-none d-md-block col-md-auto p-0">
 
-  <div className="border-bottom border-secondary border-opacity-25">
+              <div
+                style={{
+                  width: "1px",
+                  height: "70px",
+                  background: "rgba(212,175,55,0.4)",
+                }}
+              ></div>
 
-    <nav className="d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-4">
-
-      <Link
-        href="/"
-        className="text-white text-decoration-none fw-semibold"
-      >
-        HOME
-      </Link>
-
-      <Link
-        href="/about"
-        className="text-white text-decoration-none fw-semibold"
-      >
-        ABOUT US
-      </Link>
-
-      <Link
-        href="/expertise"
-        className="text-white text-decoration-none fw-semibold"
-      >
-        OUR EXPERTIES
-      </Link>
-
-      <Link
-        href="/testimonial"
-        className="text-white text-decoration-none fw-semibold"
-      >
-        TESTIMONIALS
-      </Link>
-
-    </nav>
-
-  </div>
+            </div>
 
 
-  {/* ================= BOTTOM ROW ================= */}
+            {/* ADDRESS */}
+            <div className="col-12 col-md d-flex align-items-start justify-content-md-center gap-3 px-4">
 
-  <div className="container-fluid position-relative">
+              <i
+                className="bi bi-geo-alt"
+                style={{
+                  color: "#d4af37",
+                  fontSize: "26px",
+                  marginTop: "3px",
+                }}
+              ></i>
 
-    <div className="row py-4 align-items-center">
+              <span className="fw-bold fs-5 lh-sm">
+                Building No. 3922, Street 4, Al Iskan District, Riyadh,
+                Kindom of Saudia Arabia.
+              </span>
 
-      {/* COPYRIGHT */}
-      <div className="col-12 col-md-6 text-center text-md-start px-4 mb-3 mb-md-0">
+            </div>
 
-        <span className="opacity-75">
-          Copyrights 2025 &copy; Fast Reach Global, Designed and
-          Developed by Swismax Solutions FZE
-        </span>
+          </div>
 
-      </div>
-
-
-      {/* SOCIAL ICONS */}
-      <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center gap-3 px-4">
-
-        {/* INSTAGRAM */}
-        <a
-          href="#"
-          className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
-          style={{
-            width: "36px",
-            height: "36px",
-            fontSize: "16px",
-          }}
-        >
-          <i className="bi bi-instagram"></i>
-        </a>
+        </div>
 
 
-        {/* WHATSAPP */}
-        <a
-          href="#"
-          className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
-          style={{
-            width: "36px",
-            height: "36px",
-            fontSize: "16px",
-          }}
-        >
-          <i className="bi bi-whatsapp"></i>
-        </a>
+        {/* ================= MIDDLE MENU ROW ================= */}
+
+        <div className="border-bottom border-secondary border-opacity-25">
+
+          <nav className="d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-4">
+
+            <Link
+              href="/"
+              className="text-white text-decoration-none fw-semibold"
+            >
+              HOME
+            </Link>
+
+            <Link
+              href="/about"
+              className="text-white text-decoration-none fw-semibold"
+            >
+              ABOUT US
+            </Link>
+
+            <Link
+              href="/expertise"
+              className="text-white text-decoration-none fw-semibold"
+            >
+              OUR EXPERTIES
+            </Link>
+
+            <Link
+              href="/testimonial"
+              className="text-white text-decoration-none fw-semibold"
+            >
+              TESTIMONIALS
+            </Link>
+
+          </nav>
+
+        </div>
 
 
-        {/* FACEBOOK */}
-        <a
-          href="#"
-          className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
-          style={{
-            width: "16px",
-            height: "16px",
-            fontSize: "10px",
-          }}
-        >
-          <i className="bi bi-facebook"></i>
-        </a>
+        {/* ================= BOTTOM ROW ================= */}
 
-      </div>
+        <div className="container-fluid position-relative">
 
-    </div>
+          <div className="row py-4 align-items-center">
 
-  </div>
+            {/* COPYRIGHT */}
+            <div className="col-12 col-md-6 text-center text-md-start px-4 mb-3 mb-md-0">
 
-</footer>
+              <span className="opacity-75">
+                Copyrights 2025 &copy; Fast Reach Global, Designed and
+                Developed by Swismax Solutions FZE
+              </span>
+
+            </div>
+
+
+            {/* SOCIAL ICONS */}
+            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center gap-3 px-4">
+
+              {/* INSTAGRAM */}
+              <a
+                href="#"
+                className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
+                style={{
+                  width: "36px",
+                  height: "36px",
+                  fontSize: "16px",
+                }}
+              >
+                <i className="bi bi-instagram"></i>
+              </a>
+
+
+              {/* WHATSAPP */}
+              <a
+                href="#"
+                className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
+                style={{
+                  width: "36px",
+                  height: "36px",
+                  fontSize: "16px",
+                }}
+              >
+                <i className="bi bi-whatsapp"></i>
+              </a>
+
+
+              {/* FACEBOOK */}
+              <a
+                href="#"
+                className="d-flex align-items-center justify-content-center rounded-circle border border-white text-white"
+                style={{
+                  width: "16px",
+                  height: "16px",
+                  fontSize: "10px",
+                }}
+              >
+                <i className="bi bi-facebook"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </footer>
     </>
   );
 }

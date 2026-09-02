@@ -137,11 +137,11 @@ body {
 .fast-logo {
   display: block;
 
-  width: 390px;
+  width: 250px;
   height: 210px;
 
   object-fit: contain;
-
+  margin-top: 10px;
   object-position: top center;
 }
 
@@ -717,7 +717,8 @@ body {
 .stats-section {
   width: 100%;
   padding: 70px 0;
-  background: hwb(0 100% 0%);
+  background: black;
+
 }
 
 .stats-section .row {
@@ -728,7 +729,7 @@ body {
 .stats-section .col-6 {
   text-align: center;
   padding: 20px 15px;
-  border-right: 1px solid #ddd;
+  /* border-right: 1px solid hsl(0, 87%, 34%); */
 }
 
 /* Remove border from 4th item */
@@ -739,34 +740,34 @@ body {
 /* Number */
 .stats-section h2 {
   margin: 0;
-  font-size: 55px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 1;
-  color: #111;
+  color: goldenrod;
 }
 
 /* Plus */
 .stats-section h2 sup {
   position: relative;
-  top: -20px;
+  top: -30px;
   margin-left: 3px;
 
-  font-size: 24px;
-  font-weight: 600;
-  color: #c49b63;
+  font-size: 44px;
+  font-weight: 800;
+  color: hwb(40 99% 0%);
 }
 
 /* Description */
 .stats-section p {
   margin: 15px 0 0;
 
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 
-  color: #555;
+  color: white;
 }
 
 
@@ -1014,7 +1015,7 @@ a.hero-btn {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  z-index: 2;
+  z-index: 10;
   text-align: center;
   color: hwb(0 100% 0%);
   width: 100%;
@@ -1048,19 +1049,28 @@ a.hero-btn {
 
 .sixth-container {
   background-color: goldenrod;
-
+  min-height: 400px;
   max-height: 400px;
-  margin-bottom: 0;
+  margin-bottom: 160px;
   margin-top: 120px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
+@media (max-width: 567) {
+  .sixth-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
 .text-content {
 
-  font-weight: 700;
+  font-weight: 800;
   color: white;
-  font-size: 30px;
+  font-size: 37px;
 
 }
 
@@ -1087,7 +1097,7 @@ a.hero-btn {
 }
 
 .subtext {
-  margin-right: 5px;
+  margin-right: 20px;
   width: 170px;
   height: 40px;
   font-weight: 600;
@@ -1396,7 +1406,17 @@ a.hero-btn {
   max-height: 400px;
 }
 
-@media (width: 567px) {
+
+@media (max-width: 567px) {
+  .Exp-hero-section {
+    text-align: left;
+  }
+}
+
+
+
+
+@media (max-width: 567px) {
   .P-texttt {
     text-align: left;
   }
@@ -1429,7 +1449,59 @@ a.hero-btn {
 
 .image-box {
 
-   transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-     
+
+
+/* Test Million  */
+
+.google-box {
+  /* border: 1px solid black; */
+  width: 100%;
+  box-shadow: 5px 6px 5px 5px #f1e6e6;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.google-box:hover{
+  border: 2px solid goldenrod
+}
+
+.star-box {
+  display: flex;
+  align-items: center;
+  gap: 0;;
+}
+
+
+.review-text {
+  position: relative;
+  left: -8px;
+  /* text-align: center; */
+  font-size: 20px;
+}
+
+
+.reach-text{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+.stars{
+
+  color: goldenrod;
+  position: relative;
+  top: -20;
+  font-size: 25px;
+}
+
+.Reviewd-text{
+
+   font-size: 19px;
+   text-decoration: underline;
+   color: black;
+}
+
+
