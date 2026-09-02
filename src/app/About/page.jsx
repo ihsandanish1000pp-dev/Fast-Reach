@@ -70,7 +70,7 @@ const page = () => {
 
 
 
-      <footer className="bg-black text-white">
+      <footer className="bg-black text-white mt-0">
 
         {/* ================= TOP INFO ROW ================= */}
         <div className="container-fluid border-bottom border-secondary border-opacity-25">

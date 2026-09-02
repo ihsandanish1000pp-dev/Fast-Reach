@@ -1051,7 +1051,7 @@ a.hero-btn {
   background-color: goldenrod;
   min-height: 400px;
   max-height: 400px;
-  margin-bottom: 160px;
+  /* margin-bottom: 160px; */
   margin-top: 120px;
   display: flex;
   justify-content: center;
@@ -1138,6 +1138,8 @@ a.hero-btn {
   background: #000;
   color: #fff;
   width: 100%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 
@@ -1146,7 +1148,7 @@ a.hero-btn {
 ========================= */
 
 .footer-contact {
-  padding: 58px 0 60px;
+  /* padding: 58px 0 60px; */
   border-bottom: 1px solid #333;
 }
 
