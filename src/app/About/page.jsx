@@ -57,7 +57,7 @@ const page = () => {
               </h2>
               <p className="if-text ">If you have anything in mind just contact with our exper</p>
 
-              <button className="subtext mb-2">Submit In Enquiry  </button>
+              <button className="subtext mb-4">Submit In Enquiry  </button>
               <button className="subtext mb-2">Contact Us</button>
             </div>
 
