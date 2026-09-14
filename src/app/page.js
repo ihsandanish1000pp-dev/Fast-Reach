@@ -138,292 +138,431 @@ export default function Hero() {
 
 
 
+<section className="hero-wrapper m-0 m-lg-5 mt-4">
+  <div className="row g-0 min-vh-100">
 
+    {/* Left: Image */}
+    <div className="col-lg-6 position-relative hero-image-col">
+      <Image
+        src="/constration.avif"
+        alt="Construction site at sunset with cranes"
+        fill
+        priority
+        style={{ objectFit: "cover" }}
+      />
 
-      <section className="hero-wrapper">
-        <div className="row g-0 min-vh-100">
-          {/* Left: Image */}
-          <div className="col-lg-6 position-relative hero-image-col">
-            <Image
-              src="/constration.avif" // place your image in the /public folder
-              alt="Construction site at sunset with cranes"
-              fill
-              priority
-              style={{ objectFit: "cover" }}
-            />
-            <div className="hero-image-overlay" />
-          </div>
+      <div className="hero-image-overlay" />
+    </div>
 
-          {/* Right: Content */}
-          <div className="col-lg-6 hero-content-col d-flex align-items-center">
-            <div className="px-4 px-lg-5 py-5 w-100">
-              {/* Eyebrow */}
-              <div className="d-flex align-items-center mb-3">
-                <span className="eyebrow-line" />
-                <span className="eyebrow-text">TRADING &amp; CONTRACTING</span>
-              </div>
+    {/* Right: Content */}
+    <div className="col-lg-6 hero-content-col d-flex align-items-center">
+      <div className="px-4 px-lg-5 py-5 w-100">
 
-              {/* Heading */}
-              <h1 className="hero-heading mb-4">
-                Welcome To <span className="text-accent">Fast</span> Reach
-                Global
-              </h1>
-
-              {/* Body copy */}
-              <p className="hero-paragraph mb-4">
-                Fast Reach Global is a multidisciplinary Trading &amp;
-                Contracting company delivering end-to-end solutions across
-                construction and infrastructure projects — a one-stop service
-                provider for healthcare, offices, hotels, education, commercial,
-                IT, housing, and large-scale infrastructure works.
-              </p>
-
-              <p className="hero-paragraph mb-5">
-                Backed by strong financial capacity and advanced technical
-                expertise, our team has executed projects for key government
-                entities including Ministries of Health, Education, Defense,
-                Interior, and Culture — maintaining strict compliance with
-                international and national standards.
-              </p>
-
-
-              {/* CTA Button */}
-              <a href="#read-more" className="btn hero-btn d-inline-flex align-items-center hero-btn">
-                READ MORE
-                <ArrowRight size={18} className="ms-2" />
-              </a>
-
-            </div>
-          </div>
+        <div className="d-flex align-items-center mb-3">
+          <span className="eyebrow-line" />
+          <span className="eyebrow-text">
+            TRADING &amp; CONTRACTING
+          </span>
         </div>
-      </section>
+
+        <h1 className="hero-heading mb-4">
+          Welcome To <br /> <span className="text-accent">Fast</span> Reach <br />
+          Global
+        </h1>
+
+        <p className="hero-paragraph mb-4">
+          Fast Reach Global is a multidisciplinary Trading &amp;
+          Contracting company delivering end-to-end solutions across
+          construction and infrastructure projects — a one-stop service
+          provider for healthcare, offices, hotels, education, commercial,
+          IT, housing, and large-scale infrastructure works.
+        </p>
+
+        <p className="hero-paragraph mb-5">
+          Backed by strong financial capacity and advanced technical
+          expertise, our team has executed projects for key government
+          entities including Ministries of Health, Education, Defense,
+          Interior, and Culture — maintaining strict compliance with
+          international and national standards.
+        </p>
+
+         <button className="read-moree" >read more</button>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
-      <section>
-        <div className="container-fluid">
-          <div className="row m-3 gap-3">
-            <h1 className="text-center pt-5 services-text">Our Expertise</h1>
-            <p className="text-center lorem pb-0" style={{ fontSize: '15px' }}>Lorem, ipsum dolor sit amet consectet uradipisicing elit. Explicabo
-              <p className="d-block"> omnis hic aliquam sapiente possimus totam iste
-                perspiciatis necessitatibus repellendus reprehenderit
-              </p>
+
+
+    
+      <section className="expertise-section py-5">
+
+        {/* Heading */}
+        <div className="container-fluid px-3 px-md-4">
+
+          <div className="expertise-heading text-center mb-4 mb-md-5">
+            <h2>Our Expertise</h2>
+
+            <p>
+              We provide comprehensive contracting and trading solutions
+              <br className="d-none d-md-block" />
+              tailored to meet the highest standards of quality and performance.
             </p>
-            <div className="col-sm-12 col-md-3 col-lg pic-box">
+          </div>
 
-              <Image
-                src="/civil.avif"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
 
-              <div className="pic-content">
-                <h6>FAADE & EXTERNEL WORKS</h6>
-                <button><ArrowRight size={20} /></button>
+          {/* Cards */}
+          <div className="row g-3 g-md-4">
+
+            {/* Card 1 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/First-pic.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="General Contracting"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      GENERAL
+                      <br />
+                      CONTRACTING
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
               </div>
-
             </div>
 
 
-            <div className="col-sm-12 col-md-3 col-lg pic-box">
+            {/* Card 2 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
 
-              <Image
-                src="/civil2.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
+                <div className="expertise-image">
 
-              <div className="pic-content">
-                <h6>FAADE & EXTERNEL WORKS</h6>
-                <button><ArrowRight size={20} /></button>
+                  <Image
+                    src="/civil.avif"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="Facade and External Works"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      FACADE & EXTERNAL
+                      <br />
+                      WORKS
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
               </div>
-
-
             </div>
-            <div className="col-sm-12 col-md-3 col-lg pic-box">
-              <Image
-                src="/civil3.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
 
-              <div className="pic-content">
-                <h6>FREFIGHTING & LIFE SAFITY SYSTEM</h6>
-                <button><ArrowRight size={20} /></button>
+
+            {/* Card 3 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/civil3.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="Firefighting and Life Safety Systems"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      FIREFIGHTING & LIFE
+                      <br />
+                      SAFETY SYSTEMS
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
               </div>
-
-
             </div>
-            <div className="col-sm-12 col-md-3 col-lg-3 pic-box">
 
-              <Image
-                src="/civil5.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
 
-              <div className="pic-content">
-                <h6>OUR MECHANICAL EXPIRTIES </h6>
-                <button><ArrowRight size={20} /></button>
+            {/* Card 4 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/civil5.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="Mechanical Expertise"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      OUR MECHANICAL
+                      <br />
+                      EXPERTISE
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
               </div>
-
             </div>
+
           </div>
         </div>
+
+
+        {/* Second Row */}
+        <div className="container-fluid px-3 px-md-4 mt-3 mt-md-4">
+
+          <div className="row g-3 g-md-4">
+
+            {/* Card 5 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/irgition-pic.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="General Contracting"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      GENERAL
+                      <br />
+                      CONTRACTING
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            {/* Card 6 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/medical-gas.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="Facade and External Works"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      FACADE & EXTERNAL
+                      <br />
+                      WORKS
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            {/* Card 7 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/electric.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="Firefighting and Life Safety Systems"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      FIREFIGHTING & LIFE
+                      <br />
+                      SAFETY SYSTEMS
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            {/* Card 8 */}
+            <div className="col-12 col-sm-6 col-lg-3">
+              <div className="expertise-card">
+
+                <div className="expertise-image">
+
+                  <Image
+                    src="/lowCurrent-pic.jpg"
+                    width={600}
+                    height={700}
+                    className="img-fluid w-100"
+                    alt="Mechanical Expertise"
+                  />
+
+                  <div className="expertise-overlay"></div>
+
+                  <div className="expertise-content">
+
+                    <h3>
+                      OUR MECHANICAL
+                      <br />
+                      EXPERTISE
+                    </h3>
+
+                    <button className="expertise-arrow">
+                      <ArrowRight size={25} />
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
 
-
-
-
-      <section>
+      <section className="contact-cta">
         <div className="container-fluid">
-          <div className="row m-3 gap-3">
-            <div className="col-sm-12 col-md-3 col-lg pic-box">
-              <Image
-                src="/irgition-pic.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
+          <div className="row align-items-center">
 
-              <div className="pic-content">
-                <h6>IRGITION SYSTEM</h6>
-                <button ><ArrowRight size={20} /></button>
+            {/* Left Content */}
+            <div className="col-12 col-lg-8">
+              <div className="cta-content">
+                <h2>
+                  Want To Chat? Feel Free
+                  <br className="d-none d-md-block" />
+                  To Contact Our Team
+                </h2>
+
+                <p>
+                  If you have anything in mind just
+                  <br className="d-none d-md-block" />
+                  contact with our expert
+                </p>
               </div>
             </div>
-            <div className="col-sm-12 col-md-3 col-lg pic-box">
 
-              <Image
-                src="/medical-gas.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
+            {/* Right Buttons */}
+            <div className="col-12 col-lg-4">
+              <div className="cta-buttons">
 
-              <div className="pic-content">
-                <h6>MEDICAL GAS SYSTEM</h6>
-                <button><ArrowRight size={20} /></button>
+                <button className="cta-button">
+                  <span>SUBMIT AN ENQUIRY</span>
+                  <ArrowRight size={25} />
+                </button>
+
+                <button className="cta-button">
+                  <span>CONTACT US</span>
+                  <ArrowRight size={25} />
+                </button>
+
               </div>
-
-
             </div>
-            <div className="col-sm-12 col-md-3 col-lg pic-box">
-              <Image
-                src="/Electrical-pic.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
 
-              <div className="pic-content">
-                <h6>ELECTRIC SYSTEM</h6>
-                <button><ArrowRight size={20} /></button>
-              </div>
-
-
-            </div>
-            <div className="col-sm-12 col-md-3 col-lg-3 pic-box">
-
-              <Image
-                src="/lowCurrent-pic.jpg"
-                width={300}
-                height={300}
-                alt="pic"
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  width: "100%",
-                  height: "450px",
-                  display: "block"
-                }}
-              />
-
-              <div className="pic-content">
-                <h6>LOW CURRENT </h6>
-                <button><ArrowRight size={20} /></button>
-              </div>
-
-            </div>
           </div>
         </div>
       </section>
 
 
-
-
-
-
-      <section>
-        <div className="container-fluid sixth-container">
-          <div className="row text-center">
-            <div className="col-sm-12 col-md-12 col-lg-12">
-              <h2 className=" text-content mb-0  ">
-                Want To Chat? Feel Free To Contact Our Team
-              </h2>
-              <p className="if-text ">If you have anything in mind just contact with our exper</p>
-
-              <button className="subtext mb-4">Submit In Enquiry </button>
-              <button className="subtext mb-2">Contact Us</button>
-            </div>
-
-
-          </div>
-        </div>
-      </section>
 
 
 
