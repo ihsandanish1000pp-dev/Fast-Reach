@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from "lucide-react";
 const page = () => {
   return (
     <>
@@ -48,19 +49,43 @@ const page = () => {
 
 
 
-      <section>
-        <div className="container-fluid sixth-container">
-          <div className="row text-center">
-            <div className="col-sm-12 col-md-12 col-lg-12">
-              <h2 className=" text-content mb-0 pt-5 ps-4">
-                Want To Chat ? Feel Free To Contact Our Team
-              </h2>
-              <p className="if-text ">If you have anything in mind just contact with our exper</p>
+      <section className="contact-cta">
+        <div className="container-fluid">
+          <div className="row align-items-center">
 
-              <button className="subtext mb-4">Submit In Enquiry  </button>
-              <button className="subtext mb-2">Contact Us</button>
+            {/* Left Content */}
+            <div className="col-12 col-lg-8">
+              <div className="cta-content">
+                <h2>
+                  Want To Chat? Feel Free
+                  <br className="d-none d-md-block" />
+                  To Contact Our Team
+                </h2>
+
+                <p>
+                  If you have anything in mind just
+                  <br className="d-none d-md-block" />
+                  contact with our expert
+                </p>
+              </div>
             </div>
 
+            {/* Right Buttons */}
+            <div className="col-12 col-lg-4">
+              <div className="cta-buttons">
+
+                <button className="cta-button">
+                  <span>SUBMIT AN ENQUIRY</span>
+                  <ArrowRight size={25} />
+                </button>
+
+                <button className="cta-button">
+                  <span>CONTACT US</span>
+                  <ArrowRight size={25} />
+                </button>
+
+              </div>
+            </div>
 
           </div>
         </div>
@@ -70,7 +95,10 @@ const page = () => {
 
 
 
-      <footer className="bg-black text-white mt-0">
+
+
+
+      <footer className="bg-black text-white">
 
         {/* ================= TOP INFO ROW ================= */}
         <div className="container-fluid border-bottom border-secondary border-opacity-25">
@@ -82,12 +110,12 @@ const page = () => {
 
               <i
                 className="bi bi-telephone"
-                style={{ color: "#d4af37", fontSize: "26px" }}
+                style={{ color: "#d4af37", fontSize: "38px" }}
               ></i>
 
               <a
                 href="tel:+966546865628"
-                className="text-white text-decoration-none fw-bold fs-5"
+                className=" Hello-text  "
               >
                 +966546865628
               </a>
@@ -114,12 +142,12 @@ const page = () => {
 
               <i
                 className="bi bi-envelope"
-                style={{ color: "#d4af37", fontSize: "26px" }}
+                style={{ color: "#d4af37", fontSize: "38px" }}
               ></i>
 
               <a
                 href="mailto:info@fastreachglobal.com"
-                className="text-white text-decoration-none fw-bold fs-5"
+                className="Hello-text"
               >
                 info@fastreachglobal.com
               </a>
@@ -148,12 +176,12 @@ const page = () => {
                 className="bi bi-geo-alt"
                 style={{
                   color: "#d4af37",
-                  fontSize: "26px",
-                  marginTop: "3px",
+                  fontSize: "48px",
+                  marginTop: "15px",
                 }}
               ></i>
 
-              <span className="fw-bold fs-5 lh-sm">
+              <span className=" Hello-text fw-bold  lh-sm">
                 Building No. 3922, Street 4, Al Iskan District, Riyadh,
                 Kindom of Saudia Arabia.
               </span>

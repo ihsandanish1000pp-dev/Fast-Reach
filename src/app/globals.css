@@ -212,31 +212,45 @@ body {
 .contact-btn {
   width: 200px;
   height: 53px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 12px;
-
   border-radius: 50px;
-
-  background: #d4af37;
-
+  background: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 1%);
-
   text-decoration: none;
-
   font-size: 20px;
   font-weight: 500;
-
   line-height: 1;
-
   transition: 0.2s;
+  background-color: #d4af37;
+
+  /* important */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Hover background */
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: hsl(60, 2%, 39%);
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+/* Right → Left */
+.contact-btn:hover::before {
+  width: 100%;
 }
 
 .contact-btn:hover {
-  background: #c19b27;
   color: #fff;
 }
 
@@ -572,7 +586,7 @@ body {
 .hero-content h1 {
   color: white;
 
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 400;
 
   line-height: 1.02;
@@ -588,7 +602,7 @@ body {
 .hero-content p {
   color: white;
 
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 400;
 
   line-height: 1.4;
@@ -903,11 +917,22 @@ body {
 
 /* Paragraphs */
 .hero-paragraph {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   color: #b7b7b7;
-  max-width: 480px;
+  max-width: 690px;
 }
+
+
+@media (max-width: 767px) {
+  .hero-paragraph {
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+
 
 /* CTA button */
 .hero-btn {
@@ -933,7 +958,8 @@ body {
   position: relative;
   overflow: hidden;
   border: 2px solid goldenrod;
-  width: 230px;
+  width: 240px;
+  height: 67px;
   font-size: 25px;
   padding: 10px;
   font-weight: 600;
@@ -941,6 +967,11 @@ body {
   color: white;
   background: none;
   z-index: 1;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Background */
@@ -1452,6 +1483,17 @@ a.hero-btn {
 }
 
 
+
+.expertise-section {
+  /* margin-left: 30px;
+  margin-right: 30px; */
+}
+
+.expertise-section .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (max-width: 567px) {
   .Exp-hero-section {
     text-align: left;
@@ -1509,14 +1551,15 @@ a.hero-btn {
   min-height: 300px;
 }
 
-.google-box:hover{
+.google-box:hover {
   border: 2px solid goldenrod
 }
 
 .star-box {
   display: flex;
   align-items: center;
-  gap: 0;;
+  gap: 0;
+  ;
 }
 
 
@@ -1528,13 +1571,13 @@ a.hero-btn {
 }
 
 
-.reach-text{
+.reach-text {
   font-size: 17px;
   font-weight: 600;
 }
 
 
-.stars{
+.stars {
 
   color: goldenrod;
   position: relative;
@@ -1542,11 +1585,11 @@ a.hero-btn {
   font-size: 25px;
 }
 
-.Reviewd-text{
+.Reviewd-text {
 
-   font-size: 19px;
-   text-decoration: underline;
-   color: black;
+  font-size: 19px;
+  text-decoration: underline;
+  color: black;
 }
 
 
@@ -1649,12 +1692,10 @@ a.hero-btn {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 35%,
-    rgba(0, 0, 0, 0.25) 55%,
-    rgba(0, 0, 0, 0.95) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.25) 55%,
+      rgba(0, 0, 0, 0.95) 100%);
 }
 
 
@@ -1752,7 +1793,7 @@ a.hero-btn {
 }
 
 .cta-button {
-  width: 100%;
+  width: 75%;
   min-height: 74px;
   background: #000;
   border: none;
@@ -1769,7 +1810,7 @@ a.hero-btn {
   transform-origin: 0cqb;
 }
 
-.cta-button:hover{
+.cta-button:hover {
 
   background-color: white;
   color: black;
@@ -1779,6 +1820,7 @@ a.hero-btn {
   font-size: 21px;
   font-weight: 700;
   letter-spacing: 1.5px;
+  transform: translateY(-4px);
 }
 
 .cta-button svg {
@@ -1848,17 +1890,134 @@ a.hero-btn {
 
 
 
-.hero-btn:hover{
+.hero-btn:hover {
 
   background-color: #c19b27;
 }
 
 
-@media(max-width: 767px){
+@media(max-width: 767px) {
 
   .hero-heading {
-         
+
     font-size: clamp(2rem, 4vw, 2.75rem);
 
   }
 }
+
+.Hello-text {
+
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.Hello-text {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  .Hello-text {
+    font-size: 16px;
+  }
+}
+
+
+
+
+.stats-banner {
+  --gold: #c9a24b;
+  --white: #f5f5f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 4vw;
+  padding: 60px 5vw;
+  background: #000000;
+}
+
+.stats-banner .stat {
+  text-align: center;
+  min-width: 180px;
+}
+
+.stats-banner .stat-number {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  font-size: clamp(48px, 6vw, 88px);
+  color: var(--gold);
+  line-height: 1;
+  font-size: 130px;
+}
+
+.stats-banner .stat-number sup {
+  position: absolute;
+  top: -0.02em;
+  right: -0.5em;
+  font-size: 0.38em;
+  font-weight: 900;
+  color: white;
+}
+
+.stats-banner .stat-label {
+  margin-top: 18px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: clamp(1px, 1.4vw, 17px);
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+
+}
+
+.stats-banner .stat-label span {
+  display: block;
+  font-size: 25px;
+}
+
+@media (max-width: 640px) {
+  .stats-banner {
+    gap: 40px 10vw;
+  }
+
+  .stats-banner .stat {
+    min-width: 40%;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .stats-banner .stat-number {
+    font-size: 30px;
+  }
+
+  .stats-banner .stat-label span {
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

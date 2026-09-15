@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -110,27 +109,104 @@ export default function Hero() {
 
 
 
+      <div class="stats-banner py-5">
+        <div class="container-fluid">
+          <div class="row text-center gy-4">
 
-      <section className="stats-section">
-        <div className="container">
-          <div className="row">
-
-            {stats.map((item, index) => (
-              <div className="col-6 col-lg-3" key={index}>
-
-                <h2>
-                  {item.number}
-                  <sup>+</sup>
-                </h2>
-
-                <p>
-                  {item.text}
-                </p>
-
+            <div class="col-6 col-md-3">
+              <div class="stat-number">30<sup>+</sup></div>
+              <div class="stat-label">
+                <span class="d-block">EXPERIENCE</span>
+                <span class="d-block">IN FIELD</span>
               </div>
-            ))}
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="stat-number">110<sup>+</sup></div>
+              <div class="stat-label">
+                <span class="d-block">SATISFIED</span>
+                <span class="d-block">CUSTOMER</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="stat-number">160<sup>+</sup></div>
+              <div class="stat-label">
+                <span class="d-block">COMPLETED</span>
+                <span class="d-block">PROJECTS</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="stat-number">20<sup>+</sup></div>
+              <div class="stat-label">
+                <span class="d-block">UNDER</span>
+                <span class="d-block">PROCESS PROJECTS</span>
+              </div>
+            </div>
 
           </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <section className="hero-wrapper m-0 m-lg-5 mt-4">
+        <div className="row g-0 min-vh-100">
+
+          {/* Left: Image */}
+          <div className="col-lg-6 position-relative hero-image-col">
+            <Image
+              src="/constration.avif"
+              alt="Construction site at sunset with cranes"
+              fill
+              priority
+              style={{ objectFit: "cover" }}
+            />
+
+            <div className="hero-image-overlay" />
+          </div>
+
+          {/* Right: Content */}
+          <div className="col-lg-6 hero-content-col d-flex align-items-center">
+            <div className="px-4 px-lg-5 py-5 w-100">
+
+              <div className="d-flex align-items-center mb-3">
+                <span className="eyebrow-line" />
+                <span className="eyebrow-text">
+                  TRADING &amp; CONTRACTING
+                </span>
+              </div>
+
+              <h1 className="hero-heading mb-4">
+                Welcome To <br /> <span className="text-accent">Fast</span> Reach <br />
+                Global
+              </h1>
+
+              <p className="hero-paragraph mb-4">
+                Fast Reach Global is a multidisciplinary Trading &amp;
+                Contracting company delivering end-to-end solutions across
+                construction and infrastructure projects — a one-stop service
+                provider for healthcare, offices, hotels, education, commercial,
+                IT, housing, and large-scale infrastructure works.
+              </p>
+
+              <p className="hero-paragraph mb-5">
+                Backed by strong financial capacity and advanced technical
+                expertise, our team has executed projects for key government
+                entities including Ministries of Health, Education, Defense,
+                Interior, and Culture — maintaining strict compliance with
+                international and national standards.
+              </p>
+
+              <button className="read-moree" >read more</button>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -138,74 +214,14 @@ export default function Hero() {
 
 
 
-<section className="hero-wrapper m-0 m-lg-5 mt-4">
-  <div className="row g-0 min-vh-100">
 
-    {/* Left: Image */}
-    <div className="col-lg-6 position-relative hero-image-col">
-      <Image
-        src="/constration.avif"
-        alt="Construction site at sunset with cranes"
-        fill
-        priority
-        style={{ objectFit: "cover" }}
-      />
-
-      <div className="hero-image-overlay" />
-    </div>
-
-    {/* Right: Content */}
-    <div className="col-lg-6 hero-content-col d-flex align-items-center">
-      <div className="px-4 px-lg-5 py-5 w-100">
-
-        <div className="d-flex align-items-center mb-3">
-          <span className="eyebrow-line" />
-          <span className="eyebrow-text">
-            TRADING &amp; CONTRACTING
-          </span>
-        </div>
-
-        <h1 className="hero-heading mb-4">
-          Welcome To <br /> <span className="text-accent">Fast</span> Reach <br />
-          Global
-        </h1>
-
-        <p className="hero-paragraph mb-4">
-          Fast Reach Global is a multidisciplinary Trading &amp;
-          Contracting company delivering end-to-end solutions across
-          construction and infrastructure projects — a one-stop service
-          provider for healthcare, offices, hotels, education, commercial,
-          IT, housing, and large-scale infrastructure works.
-        </p>
-
-        <p className="hero-paragraph mb-5">
-          Backed by strong financial capacity and advanced technical
-          expertise, our team has executed projects for key government
-          entities including Ministries of Health, Education, Defense,
-          Interior, and Culture — maintaining strict compliance with
-          international and national standards.
-        </p>
-
-         <button className="read-moree" >read more</button>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-    
-      <section className="expertise-section py-5">
+      <section className="expertise-section">
 
         {/* Heading */}
-        <div className="container-fluid px-3 px-md-4">
+        <div className="container-fluid" >
 
           <div className="expertise-heading text-center mb-4 mb-md-5">
-            <h2>Our Expertise</h2>
+            <h1>Our Expertise</h1>
 
             <p>
               We provide comprehensive contracting and trading solutions
@@ -366,7 +382,7 @@ export default function Hero() {
 
 
         {/* Second Row */}
-        <div className="container-fluid px-3 px-md-4 mt-3 mt-md-4">
+        <div className="container-fluid  mt-3 mt-md-4">
 
           <div className="row g-3 g-md-4">
 
@@ -564,8 +580,6 @@ export default function Hero() {
 
 
 
-
-
       <footer className="bg-black text-white">
 
         {/* ================= TOP INFO ROW ================= */}
@@ -578,12 +592,12 @@ export default function Hero() {
 
               <i
                 className="bi bi-telephone"
-                style={{ color: "#d4af37", fontSize: "26px" }}
+                style={{ color: "#d4af37", fontSize: "38px" }}
               ></i>
 
               <a
                 href="tel:+966546865628"
-                className="text-white text-decoration-none fw-bold fs-5"
+                className="Hello-text"
               >
                 +966546865628
               </a>
@@ -610,12 +624,12 @@ export default function Hero() {
 
               <i
                 className="bi bi-envelope"
-                style={{ color: "#d4af37", fontSize: "26px" }}
+                style={{ color: "#d4af37", fontSize: "38px" }}
               ></i>
 
               <a
                 href="mailto:info@fastreachglobal.com"
-                className="text-white text-decoration-none fw-bold fs-5"
+                className="Hello-text"
               >
                 info@fastreachglobal.com
               </a>
@@ -644,12 +658,12 @@ export default function Hero() {
                 className="bi bi-geo-alt"
                 style={{
                   color: "#d4af37",
-                  fontSize: "26px",
-                  marginTop: "3px",
+                  fontSize: "48px",
+                  marginTop: "15px",
                 }}
               ></i>
 
-              <span className="fw-bold fs-5 lh-sm">
+              <span className=" Hello-text fw-bold  lh-sm">
                 Building No. 3922, Street 4, Al Iskan District, Riyadh,
                 Kindom of Saudia Arabia.
               </span>
@@ -670,6 +684,7 @@ export default function Hero() {
             <Link
               href="/"
               className="text-white text-decoration-none fw-semibold"
+              style={{ fontSize: '23px' }}
             >
               HOME
             </Link>
@@ -677,6 +692,7 @@ export default function Hero() {
             <Link
               href="/about"
               className="text-white text-decoration-none fw-semibold"
+              style={{ fontSize: '23px' }}
             >
               ABOUT US
             </Link>
@@ -684,6 +700,7 @@ export default function Hero() {
             <Link
               href="/expertise"
               className="text-white text-decoration-none fw-semibold"
+              style={{ fontSize: '23px' }}
             >
               OUR EXPERTIES
             </Link>
@@ -691,6 +708,7 @@ export default function Hero() {
             <Link
               href="/testimonial"
               className="text-white text-decoration-none fw-semibold"
+              style={{ fontSize: '23px' }}
             >
               TESTIMONIALS
             </Link>
@@ -768,6 +786,8 @@ export default function Hero() {
         </div>
 
       </footer>
+
+
     </>
   );
 }
